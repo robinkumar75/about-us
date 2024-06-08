@@ -1,6 +1,9 @@
+
+
 *{
   margin: 0;
   padding: 0;
+  
   
 }
 
@@ -254,51 +257,33 @@
   }
 }
 
-.intro-bar {
-  width: 100%;
+.Breadcrumb-section{
+  width: 1140px;
   height: 50px;
-  background-color: #fdf8f7;
-}
-
-.intro-link {
-  width: 177px;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 20px;
+  background-color: #FDF8F7;
   
 }
 
-.intro-links {
-  display: block;
+.Breadcrumb-link-box{
+  width: 177px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 20px;
 }
 
-
-
-.links {
-  display: inline;
-  padding: 10px;
+.home{
+  color: #656363;
 }
 
-.links a {
-  color: #5d3e31;
-  text-decoration: none;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 20px;
-  text-align: center;
+.about{
+  color: #656363;
 }
 
-.arrow {
-  width: 15.58px;
-  height: 15.17px;
-}
+/* header-section */
 
-
-/* <!-- Welcome To Brunswick Fur Food --> */
-
-.container-brunswick{
+.header-heading-and-paragraph{
     width: 100%;
     height: 695px;
     /* border: 2px solid black; */
@@ -309,33 +294,16 @@
 }
 
 
-.heading-box{
+.header-heading {
     width: 820px;
     height: 129px;
     /* border: 1px solid black; */
     text-align: center;
 }
 
-.story-box{
-    width: 1140px;
-    height: 450px;
-    /* border: 1px dotted black; */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-/* .brunswick-title{
-    font-family: 'Source Serif Pro';
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 60px;
-
-} */
 
 
-
-.heading-box p{
+.header-heading p{
     color: #5d3e31;
     margin-top: 24px;
 }
@@ -344,26 +312,26 @@
     color: #5d3e31;
 }
 
+.our-story-and-image-section {
+    width: 1140px;
+    height: 450px;
+    /* border: 1px dotted black; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-.our-story{
+.our-story-section{
     width: 610px;
     height: 450px;
     /* border: 1px dashed; */
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
+   
 }
 
-.hero-section-image{
-    width: 431px;
-    height: 360px;
-    /* border: 2px solid red; */
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    background-image: url(./image/Vector.jpg);
-}
+
 
 .background-image{
     width: 322px;
@@ -375,23 +343,31 @@
     height: 241px;
 }
 
-.upper{
+.hero-section-image1{
+  display: none;
+}
+
+.our-story-inner-section{
     width: 610px;
-    height: 254px;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     /* border: 2px solid yellow; */
 }
 
-.upper h2{
+.our-story-inner-section h2{
     margin-bottom: 29px;
 }
 
-.upper p{
+.our-story-inner-section p{
     width: 605px;
     height: 205px;
+    
 }
 
 
-.lover{
+.our-story-icon-text-section{
     width: 610px;
     height: 77px;
     /* border: 1px dotted blue; */
@@ -399,29 +375,10 @@
     justify-content: space-between;
     align-self: center;
     margin-top: 29px;
+    margin-bottom: 50px;
 }
 
-/* .story-heading{
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 45px;
-    color: #352B26;
-    font-family: "Source Serif 4"
-    
-
-} */
-
-/* .story-para{
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 30px;
-    font-family: 'Source Sans pro';
-    padding-top: 30px;
-    color: #7D5C4E;
-    ;
-} */
-
-.lover-box1{
+.our-story-icon-text-box1{
     width: 200px;
     height: 77px;
     /* border: 1px solid violet; */
@@ -431,7 +388,7 @@
     align-items: center;
 }
 
-.lover-box2{
+.our-story-icon-text-box2{
     width: 190px;
     height: 77px;
     /* border: 1px solid violet; */
@@ -441,7 +398,7 @@
     align-items: center;
 }
 
-.lover-box3{
+.our-story-icon-text-box3{
     width: 170px;
     height: 77px;
     /* border: 1px solid violet; */
@@ -453,37 +410,41 @@
 
 
 
-.lover-icon{
+.our-story-icon-text-box1-icon{
     width: 48px;
     height: 48px;
     
 }
 
-.lover-text1{
+.our-story-icon-text-text1{
     width: 195px;
     height: 20px;
     /* border: 1px solid darkgray; */
 }
 
-.lover-text2{
+.our-story-icon-text-text2{
     width: 190px;
     height: 20px;
     /* border: 1px solid darkgray; */
 }
 
-.lover-text3{
+.our-story-icon-text-text3{
     width: 170px;
     height: 20px;
     /* border: 1px solid darkgray; */
 }
 
-/* .lover-para{
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 20px;
-    color: #656363;
-    
-} */
+.our-story-icon-text-text1 p{
+  color: #656363;
+}
+
+.our-story-icon-text-text2 p{
+  color: #656363;
+}
+
+.our-story-icon-text-text3 p{
+  color: #656363;
+}
 
 
 
@@ -508,7 +469,7 @@
  
 }
 
-.about{
+.about-details{
     width: 546px;
     height: 232px;
     /* border: 1px dotted black; */
@@ -519,7 +480,7 @@
 
 }
 
-.quality{
+.quality-details{
     width: 546px;
     height: 232px;
     display: flex;
@@ -531,6 +492,7 @@
 .about-heading{
     width: 99px;
     height: 45px;
+    
 }
 
 .about-heading h3{
@@ -541,18 +503,12 @@
     font-family: "Source Serif 4"
 }
 
-.about-para{
-    width: 485px;
+.about p{
+    width: 550px;
     height: 115px;
+    /* border: 2px solid black; */
+    margin-bottom: 20px;
 }
-
-/* .about-para p{
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 22.5px;
-    padding-top: 30px;
-    color: #7D5C4E;
-} */
 
 
 .quality-heading{
@@ -590,7 +546,7 @@
 
 /* <!-- Meet our Team --> */
 
-.container-myteam{
+.meet-our-team-section{
   width: 100%;
   height: 500px;
   /* border: 2px solid black; */
@@ -602,13 +558,13 @@
 }
 
 
-.team-heading{
+.meet-our-team-inner-section{
   width: 335px;
   height: 60px;
   /* border: 1px solid black; */
 }
 
-.team-heading h4{
+.meet-our-team-inner-section h4{
   font-size: 48px;
   font-weight: 700;
   line-height: 60px;
@@ -616,7 +572,7 @@
   font-family: "Source Serif pro"
 }
 
-.our-team{
+.three-card-section{
   width: 1140px;
   height: 283px;
   /* border: 1px solid black; */
@@ -624,7 +580,7 @@
   justify-content: space-between;
 }
 
-.our-team-box{
+.card{
   width: 336px;
   height: 283px;
   /* border: 1px dotted saddlebrown; */
@@ -642,7 +598,7 @@
   
 }
 
-.team-upper{
+.team-inner{
   width: 180px;
   height: 143px;
   /* border: 1px solid green; */
@@ -676,19 +632,23 @@
 }
 
 
-.team-lover{
+.team-text{
   width: 300px;
   height: 100px;
   /* border: 1px solid red; */
 }
 
-/* .team-lover p{
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 20px;
-  color: #7D5C4E;
-  font-family: 'Source Sans Pro';
-} */
+.meet-our-team-section-underline{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.line{
+  width: 500px;
+  color: #808080;
+}
+
 
 /* Subscribe to our Email section 
   ==================================*/
@@ -706,9 +666,10 @@
     padding-top: 80px;
   
     /* bg image  */
-    background-image: url(./image/active-campaign-bg-image.png);
+    background-image: url(./image/web\ -\ subscribe\ mail.png);
     background-position: center;
     background-repeat: no-repeat;
+    object-fit: cover;
   }
   
   .subscribe-email-form {
@@ -822,6 +783,10 @@
   ===================*/
 .footer-section {
   background-color: var(--Grey100);
+}
+
+.footer-section{
+  padding-bottom: 0;
 }
 
 .footer-inner-sec {
@@ -943,4 +908,18 @@
 .footer-loging-btn a {
   padding: 13px 42px;
   white-space: nowrap;
+}
+
+.footer-image.section{
+  width: 100%;
+  height: 337px;
+}
+
+
+.footer-image{
+  width: 100%;
+  height: 337px;
+  text-align: center;
+  background: #F0F0F0;
+  
 }
