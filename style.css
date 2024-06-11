@@ -11,7 +11,7 @@
   width: 100%;
   padding: 100px;
   height: 70px;
-  background-color: var(--Grey100); 
+  background-color: var(--Grey100);
   padding: 10px 0px;
 }
 
@@ -21,29 +21,23 @@
   align-items: center;
 }
 
-.navbar .logo {
+.logo-section {
   width: 240px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  font-family: "Source Sans Pro";
+  font-family: 'Source Sans Pro';
 }
 
-.navbar .logo .logo-cap {
+.logo-section .logo {
   font-size: 20px;
   line-height: 25px;
   font-weight: 700;
   color: var(--black);
-}
-
-.navbar .logo .logo-sm {
-  font-size: 14px;
-  line-height: 17.5px;
-  font-weight: 400;
-  color: var(--black);
-  font-family: "Source Sans Pro", sans-serif;
-}
+  text-decoration: none;
+  cursor: pointer;
+} 
 
 .nav-inner-links {
   list-style: none;
@@ -92,7 +86,7 @@
 }
 
 #nav-dropdown .dropdown-item:hover {
-  background-color: #cecece;
+  background-color: #CECECE;
 }
 
 .nav-dw-btn:hover .nav-dropdown-links {
@@ -107,29 +101,22 @@
   padding: 12px 14px;
   white-space: nowrap;
   border-radius: 5px;
-  font-family: "Source Sans Pro", sans-serif;
-  transition: all 0.3s linear;
+  font-family: 'Source Sans Pro', sans-serif;
+  transition: all .3s linear;
 }
 
 .nav-link-item:hover a {
-  background-color: #cecece;
+  background-color: #CECECE;
 }
 
 .nav-login-btn .nav-login-anch {
   font-size: var(--Medium-400-fs);
   font-weight: var(--regular);
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   text-decoration: none;
   color: var(--NeroWhite);
   padding: 13px 46px;
-  text-decoration: none;
-  background: linear-gradient(
-    90deg,
-    #5d3e31 0%,
-    #704b3b 24%,
-    #855946 50%,
-    #7d5c4e 100%
-  );
+  background: linear-gradient(90deg, #5D3E31 0%, #704B3B 24%, #855946 50%, #7D5C4E 100%);
   border-radius: 5px;
 }
 
@@ -137,21 +124,45 @@
   background: var(--Dark_brown);
 }
 
+
 @media (max-width: 1300px) {
   .nav-container {
     padding: 10px 20px;
   }
 
-  .navbar .nav-links .nav-inner-links .nav-link-item {
+  .nav-link-item {
     margin-right: 0px;
   }
 
-  .navbar .nav-links .nav-inner-links .nav-link-item a {
+  .nav-link-item a {
     padding: 12px 14px;
   }
 }
 
-/* mobile navbar css start */
+
+@media(max-width:948px) {
+  .nav-link-item a {
+    font-size: var(--lg-icon-text-fs);
+    line-height: var(--lg-icon-text-lh);
+    letter-spacing: var(--lg-icon-text-ls);
+    padding: 12px 12px;
+  } 
+  .logo-section {
+    width: 140px;
+  }
+
+  .logo-section .logo {
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 700;
+    color: var(--black);
+    white-space: nowrap;
+  } 
+
+}
+
+/* mobile navbar css start 
+============================*/
 
 .mobile-nav-container {
   display: flex;
@@ -167,6 +178,7 @@
 
 .mobile-nav-inner-sec {
   width: 100%;
+  height: 52px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -188,16 +200,14 @@
 .mobile-nav-logo {
   text-align: center;
 }
-.mobile-nav-logo .mob-nav-logo-big-size {
+
+.mobile-nav-logo .bff-mobile-view-logo {
   color: var(--black);
   padding-bottom: 2px;
+  cursor: pointer;
+  text-decoration: none;
 }
-
-.mobile-nav-logo .mob-nav-logo-small-size {
-  font-size: 12px;
-  font-weight: var(--regular);
-  color: var(--black);
-}
+ 
 
 /* mobile popup */
 
@@ -208,7 +218,6 @@
   left: -310px;
   height: 90vh;
   background-color: var(--NeroWhite);
-  /* display: none; */
   z-index: 99;
   padding: 20px 24px 46px;
   overflow-x: hidden;
@@ -228,7 +237,7 @@
   width: 100%;
   font-size: 26px;
   line-height: 30px;
-  font-family: "Source Serif Pro";
+  font-family: 'Source Serif Pro';
   font-weight: var(--bold);
   color: var(--Sec_brown);
   text-decoration: none;
@@ -244,14 +253,17 @@
 
 .sidebar-login-btn .s-log-btn {
   padding: 13px 0;
+
 }
 
 /* close and open icon */
 
-@media (max-width: 576px) {
+
+@media(max-width:788px) {
   .nav-container {
     display: none;
   }
+
   .mobile-nav-container {
     display: block;
   }
@@ -579,6 +591,147 @@
   display: flex;
   justify-content: space-between;
 }
+/* slider */
+
+.meet-team-section{
+  display: none;
+}
+
+.meet-team-section{
+  width: 360px;
+  height: 363px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #FDF8F7;
+  display: none;
+  
+}
+
+.meet-team-section-heading{
+  width: 178px;
+  height: 30px;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 30px;
+  margin-bottom: 24px;
+}
+
+
+.swiper {
+  width: 330px;
+  height: 244px;
+  /* border: 1px solid black; */
+  background-color: #FDF8F7;
+  
+}
+
+.swiper-slide {
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-pagination {
+position: absolute;
+text-align: center;
+transition: .3s opacity;
+transform: translate3d(0, 0, 0);
+z-index: 10;
+}
+
+.swiper-pagination{
+width: 72px;
+height: 16px;
+gap: 24px;
+}
+
+.card{
+width: 336px;
+height: 283px;
+/* border: 1px dotted saddlebrown; */
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: #FDF8F7;
+
+}
+
+.inner-box{
+width: 312px;
+height: 244px;
+/* border: 1px dashed darkblue; */
+display: flex;
+flex-direction: column;
+
+align-items: center;
+
+}
+
+.team-inner{
+width: 80px;
+height: 131px;
+/* border: 1px solid green; */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.team-image{
+width: 80px;
+height: 80px;
+/* border: 1px solid brown; */
+}
+
+.team-member-name{
+width: 63px;
+height:16px;
+font-size: 18px;
+font-weight: 400;
+line-height: 22px;
+text-align: center;
+font-family: 'Source Sans Pro';
+
+}
+
+.team-member-otherinformation{
+width: 70px;
+height: 19px;
+font-size: 14px;
+font-weight: 400;
+line-height: 19px;
+text-align: center;
+font-family: 'Source Sans Pro';
+margin-top: 8px;
+}
+
+
+.team-text{
+width: 312px;
+height: 70px;
+margin-top: 16px;
+color: #7D5C4E;
+font-size: 12px;
+font-weight: 400;
+line-height: 18px;
+/* border: 1px solid red; */
+}
+
+.meet-our-team-section-underline{
+width: 100%;
+display: flex;
+justify-content: center;
+}
+
+.line{
+width: 500px;
+color: #808080;
+}
+
 
 .card{
   width: 336px;
